@@ -14,16 +14,17 @@ import re
 def stripRegex(string, removalChr = ' '):
 
     print('\n', string)
-    print("removalChr : ", removalChr)
+    print(f"removalChr : '{removalChr}'")
 
     if removalChr == ' ':
         sRegex = re.compile(r'\S+.*\S+')
         mo = sRegex.findall(string)
-        print("Result : \n", mo[0])
+        print(f"Result : \n'{mo[0]}'")    
     else:
-        sRegex = re.compile(r'[(%s)]'%{removalChr})    
+        # sRegex = re.compile(r'[(%s)]'%{removalChr})    
+        sRegex = re.compile(fr'[{removalChr}]')    
         mo = sRegex.sub('', text)
-        print("Result : \n", mo)
+        print(f"Result : \n'{mo}'")
 
 
 text = "  hello, my name is lisa.   "
