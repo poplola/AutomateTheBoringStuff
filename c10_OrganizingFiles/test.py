@@ -1,33 +1,25 @@
-import zipfile
-import os
-from time import ctime
-from pathlib import Path
+# directory = '/Users/Programs/Directory/program1.csv'
+# endIndex = directory.rfind(".")
+# startIndex = directory.rfind("/")
+# print(directory[startIndex+1:endIndex])
+# print(startIndex, endIndex)
 
+# directory = '/Users/Programs/Directory/program1.csv'
+# print(directory.rpartition('.')[0].split('/')[-1])
+# print(directory.rpartition('.'))
 
-class ZipUtilities:
+# import pathlib
+ 
+# directory = '/Users/Programs/Directory/program1.csv'
+# filename = pathlib.Path(directory).stem
+ 
+# print(filename)
 
-    def toZip(self, file, filename):
-        zip_file = zipfile.ZipFile(filename, 'w')
-        if os.path.isfile(file):
-            zip_file.write(file)
-        else:
-            self.addFolderToZip(zip_file, file)
-        zip_file.close()
+l = [2,4,5,3,3,2,4,5,6,7,3,2]
+d = set(l)
+# d = set((i, l.count(i)) for i in l if l.count(i)>1)
+# print(set((i, l.count(i)) for i in l if l.count(i)>1))
 
-    def addFolderToZip(self, zip_file, folder): 
-        for file in os.listdir(folder):
-            full_path = os.path.join(folder, file)
-            if os.path.isfile(full_path):
-                print('File added: ' + str(full_path))
-                zip_file.write(full_path)
-            elif os.path.isdir(full_path):
-                print('Entering folder: ' + str(full_path))
-                self.addFolderToZip(zip_file, full_path)
-
-def main():
-    utilities = ZipUtilities()
-    filename = f'BackupFile_{ctime()}.zip'
-    directory = f'{str(Path.cwd())}/c10_OrganizingFiles/'
-    utilities.toZip(directory, filename)
-
-main()
+print(d)
+# for item in d:
+#     print(f"Vaule <{item[0]}> appeared {item[1]} times.")
