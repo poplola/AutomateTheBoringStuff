@@ -1,0 +1,12 @@
+2021-01-01 18:15:57,628 - DEBUG - start of the program
+2021-01-01 18:16:07,790 - DEBUG - guess ======= heads ========
+2021-01-01 18:16:07,790 - DEBUG - toss ======== heads =========
+2021-01-01 18:16:07,790 - DEBUG - End of the program
+
+2021-01-01 20:15:32,765 - DEBUG - start of the program
+2021-01-01 20:15:37,183 - DEBUG - guess ======= heads ========
+2021-01-01 20:15:37,184 - DEBUG - toss ======== tails =========
+2021-01-01 20:15:42,840 - DEBUG - guess 2 ======= heads ========
+2021-01-01 20:15:42,840 - DEBUG - toss 2 ======== tails =========
+2021-01-01 20:15:42,840 - DEBUG - End of the program
+

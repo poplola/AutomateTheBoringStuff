@@ -1,0 +1,4 @@
+The ADJECTIVE panda walked to the NOUN and then VERB. A nearby NOUN was unaffected by these events.
+
+Updated by user input: 
+The a panda walked to the b and then c. A nearby d was unaffected by these events.

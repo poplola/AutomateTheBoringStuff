@@ -14,7 +14,7 @@
 
 # switchLights(market_2nd)
 
-spam = 5
-assert spam < 10, f'The spam variable {spam} is less than 10.'
-# "{spam} must be less 10"
-    # print(f"{spam} must be less 10")
+# spam = 5
+# assert spam < 10, f'The spam variable {spam} is less than 10.'
+
+

@@ -1,0 +1,4 @@
+2021-02-05 16:01:11,602 - DEBUG - sys.argv : ====== ['/Users/flaviolago/Documents/Work/Training/Python/MSCode Projects/TestFile_L/Automate Boring Stuff with Python/12/mapIt.py'] ======
+2021-02-05 16:01:11,855 - DEBUG - address got ====== To join the meeting on Google Meet, click this link: meet.google.com/rsx-vjsj-fcq
+
+Or open Meet and enter this code: rsx-vjsj-fcq ======
