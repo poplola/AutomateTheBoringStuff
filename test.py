@@ -1,4 +1,20 @@
-import time
-for i in range(10):
-    print(i, end='...')
-    # time.sleep(1)
+def changeWords(sentence):
+    for char in sentence:
+        if char == 'a':
+            printSameLine('x')
+        elif char == 'bd':
+            printSameLine('y')
+        else:
+            printSameLine(char)
+
+def goWordChange():
+    print('')
+    print('paste text to change')
+    print('')
+    text = input()
+    print('')
+    changeWords(text)
+    print('')
+    return goWordChange()
+
+goWordChange()

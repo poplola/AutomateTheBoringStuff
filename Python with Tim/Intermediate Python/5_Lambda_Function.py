@@ -1,5 +1,6 @@
 #5 Lambda Function
-# Lambda is a short form of function
+# Lambda is a short form of function, create mini function, 
+# function inside of function
 
 # # ==================================== 1 =====
 # def func(x):

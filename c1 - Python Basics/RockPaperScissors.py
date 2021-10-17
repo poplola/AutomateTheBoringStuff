@@ -37,5 +37,5 @@ while True:
         print('You win!')
     else:
         loss += 1
-        print('You loss!')
+        print('You lost!')
     
