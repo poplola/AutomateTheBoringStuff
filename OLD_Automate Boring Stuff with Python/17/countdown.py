@@ -12,7 +12,7 @@ while timeLeft > 0:
 
 # TODO: At the end of the countdown, play a sound file.
 subprocess.Popen(['open', 'alarm.wav'])
-subprocess.Popen(['python3', 'mutiTDWallPaper.py'])
+# subprocess.Popen(['python3', 'mutiTDWallPaper.py'])
 
 # pathApp = "/System/Applications/Calculator.app/Contents/MacOS/Calculator"
 # subprocess.Popen(pathApp)
