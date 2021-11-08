@@ -86,29 +86,3 @@ for person in formData:
     time.sleep(5)
     # pyautogui.click(155,268)
     pyautogui.write(['\t','\t','enter'], 0.5)
-
-    # Click the Submit another response link.
-    # pyautogui.click(submitAnotherLink[0], submitAnotherLink[1])
-    # print(pyautogui.mouseInfo())
-    # pyautogui.click('SubmitAnotherResponse.png')
-    # fw = pyautogui.getActiveWindow()
-    # print(fw.title)
-
-
-    # TODO: Wait until the form page has loaded.
-
-    ## TODO: Fill out the Name Field.
-
-    ## TODO: Fill out the Greatest Fear(s) field.
-
-    ## TODO: Fill out the Source of Wizard  Powers field.
-
-    ## TODO: Fill out the RoboCop field.
-
-    ## TODO: Fill out the Additional Comments field.
-
-    ## TODO: Click Submit.
-
-    ## TODO: Wait until form page has loaded.
-
-    ## TODO: Click the Submit another response link.

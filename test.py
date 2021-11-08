@@ -27,5 +27,24 @@ a = [1,2,3,4,5]
 # print(a)
 # for i in range(len_a, -1, -1):
 #     print(i, a[i])
-a.reverse()
-print(a)
+# a.reverse()
+# print(a)
+
+
+# import requests
+# from bs4 import BeautifulSoup
+ 
+# base_url = 'http://www.nytimes.com'
+# r = requests.get(base_url)
+# soup = BeautifulSoup(r.text, "html.parser")
+ 
+# for story_heading in soup.find_all(class_="story-heading"): 
+#     if story_heading.a: 
+#         print(story_heading.a.text.replace("\n", " ").strip())
+#     else: 
+#         print(story_heading.contents[0].strip())
+
+import random
+
+num = random.randrange(10)
+print(num)
