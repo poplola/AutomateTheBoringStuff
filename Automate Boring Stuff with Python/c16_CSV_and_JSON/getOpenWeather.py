@@ -52,12 +52,13 @@ response.raise_for_status()
 
 # TODO: Load JSON data into a Python variable.
 weatherData = json.loads(response.text)
-# pprint.pprint(weatherData)
+pprint.pprint(weatherData)
 
 print('Current weather in %s:' % (city)) 
 # print(len(weatherData))
 w = weatherData['main']
 current_temp_k = w['temp']
+print(current_temp_k)
 current_temp_F = (current_temp_k - 273.15) * 9/5 +32
 # print(w)
 print(f"Current Temperature is {int(current_temp_F)}F.")

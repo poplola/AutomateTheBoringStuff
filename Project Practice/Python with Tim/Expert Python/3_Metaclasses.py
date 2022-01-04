@@ -1,6 +1,10 @@
 #3 Metaclasses
 """
-use 'Type' function to create a class
+    use 'Type' function to create a class and Metaclass
+        1: type of class / type of class instance or object
+        2: Test1 = type(class name, bases, attrs) : use 'Type' function to create a class
+        3: inherance from class / add attribute
+        4: Meta class inherance from type / change class variable to upper case
 """
 
 
@@ -44,8 +48,8 @@ t.show()
 t.add_attribute()
 print(t.z)
 
-# <===== Practice 4:  Meta class inherance from type =====>
-print("\n<===== Practice 4:  Meta class inherance from type =====>\n")
+# <===== Practice 4:  Create Meta class: inherance from type /change class variable to upper case =====>
+print("\n<===== Practice 4:  Create Meta class: inherance from type / change class variable to upper case=====>\n")
 class Meta(type):
     def __new__(self, class_name, bases, attrs):
         print(attrs)
@@ -59,7 +63,7 @@ class Meta(type):
                 a[name.upper()] = val
         print(a)
         # return type(class_name, bases, attrs)
-        return type(class_name, bases, a)
+        return type(class_name, bases, a)   # change class variable to upper case
 
 class Dog(metaclass=Meta):
     x = 5
@@ -69,42 +73,7 @@ class Dog(metaclass=Meta):
         print("hi")
 
 d = Dog()
-print(d.X)
-
-
-
-# # <===== Practice 5:  Queue: show queue class code =====>
-# print("\n<===== Practice 5:  Queue: show queue class code  =====>\n")
-# from queue import Queue
-# import inspect
-
-# q = Queue()
-# print(q)
-# print(inspect.getsource(Queue))
-
-
-# # <===== Practice 6:  '__add__'/'__sub__': how to use queue class methods based on queue class code =====>
-# print("\n<===== Practice 6:  '__add__'/'__sub__': how to use queue class methods based on queue class code =====>\n")
-# from queue import Queue as q
-
-# class Queue(q):
-#     def __repr__(self):
-#         return f"Queue({self._qsize()})"
-
-#     def __add__(self, item):
-#         self.put(item)
-
-#     def __sub__(self, item):
-#         self.get()
-
-
-# qu = Queue()
-# qu + 9
-# qu + 6
-# # qu - 2
-# qu - None
-
-# print(qu)
+print(d.X)  # change class variable to upper case so call upper case X 
 
 
 print()
