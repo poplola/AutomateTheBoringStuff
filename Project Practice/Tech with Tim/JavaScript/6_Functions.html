@@ -1,0 +1,65 @@
+<!-- 
+YouTube link: https://www.youtube.com/watch?v=aPvHcc0ysm0
+⭐️ Timestamps ⭐️
+00:00:00 | Introduction
+00:01:18 | Environment Setup and "Hello World!"
+00:12:07 | Modifying HTML Elements (getElementByID, innerHTML etc. )
+00:22:54 | Variables and Data Types
+00:35:35 | Logical and Assignment Operators
+00:49:11 | Conditions and Booleans
+⭐️ 01:03:59 | Introduction to Functions
+01:15:30 | If, Else If, Else
+01:25:54 | Switch Statements
+01:36:09 | String Methods and Manipulation
+01:45:43 | Arrays
+01:54:05 | While Loops
+02:04:00 | For Loops
+02:14:04 | For Of /For Each Loops
+02:21:26 | Sets
+02:33:08 | Maps
+02:44:29 | Mutability -->
+
+<html>
+    <body>
+        <h1 id="header">Hello</h1>
+        <button onclick="color('Red')">Red</button>
+        <button onclick="color('Green')">Green</button>
+        <script>
+            /*
+            function add(a, b){
+                // console.log("add");
+                return a + b;
+            }
+
+            var x = add(5, 5);
+            var y = add(5, 7)
+            console.log(x);
+            console.log(y);
+            console.log(add(235, -896))
+            */
+
+            /*
+            function red(){
+                // console.log("red")
+                document.getElementById("header").innerHTML = "Red"
+                document.getElementById("header").style.color = "red"
+            }
+
+            function green(){
+                // console.log("green")
+                document.getElementById("header").innerHTML = "Green"  
+                document.getElementById("header").style.color = "green"            
+            }
+            */
+
+            function color(xColor){
+                console.log(xColor)
+        
+                document.getElementById("header").innerHTML = xColor
+                document.getElementById("header").style.color = xColor
+
+            }
+
+        </script>
+    </body>
+</html>

@@ -48,3 +48,9 @@ import random
 
 num = random.randrange(10)
 print(num)
+
+
+print(os.getcwd())
+newDir = "/Users/flaviolago/Documents/Education/Liping/Python/Projects/Project Practice/Python with Tim/3 Python Automation Projects - For Beginners/"
+os.chdir(newDir)
+print(os.getcwd())

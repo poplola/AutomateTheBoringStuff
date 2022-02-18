@@ -1,0 +1,58 @@
+<!-- 
+YouTube link: https://www.youtube.com/watch?v=aPvHcc0ysm0
+⭐️ Timestamps ⭐️
+00:00:00 | Introduction
+00:01:18 | Environment Setup and "Hello World!"
+00:12:07 | Modifying HTML Elements (getElementByID, innerHTML etc. )
+00:22:54 | Variables and Data Types
+00:35:35 | Logical and Assignment Operators
+00:49:11 | Conditions and Booleans
+01:03:59 | Introduction to Functions
+01:15:30 | If, Else If, Else
+01:25:54 | Switch Statements
+01:36:09 | String Methods and Manipulation
+01:45:43 | Arrays
+01:54:05 | While Loops
+02:04:00 | For Loops
+02:14:04 | For Of /For Each Loops
+⭐️ 02:21:26 | Sets
+02:33:08 | Maps
+02:44:29 | Mutability -->
+
+<html>
+    <body>
+        <script>
+            // uniqe item/number in a set
+            var _set = new Set()
+            _set.add(3).add(5).add(7).add(3)
+            // console.log(_set)
+            // console.log(_set.has(7))
+            // console.log(_set.size)
+            // console.log(_set.delete(5))
+            // console.log(_set)
+            // console.log(_set.values())
+
+            // // read item from a set.
+            // for (var entry of _set){
+            //     console.log(entry)
+            // }
+
+            // var set1 = new Set([1,1,1,8,3,3,5,5,8,5,3])
+            // console.log(set1)
+
+
+            function test(x){
+                console.log(x)
+                if (x == 'l'){
+                    console.log("Found letter : " + x)
+                }else{
+                    console.log("Nope!")
+                }
+            }
+            var set2 = new Set("hello")
+            console.log(set2)
+            set2.forEach(test)
+
+        </script>    
+    </body>
+</html>

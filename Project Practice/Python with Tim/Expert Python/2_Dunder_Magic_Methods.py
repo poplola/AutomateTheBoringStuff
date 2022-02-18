@@ -41,7 +41,7 @@ p(4)
 
 # <===== Practice 4:  '__len__': length of variable =====>
 print("\n<===== Practice 4:  '__len__': length of variable =====>\n")
-print(len(p))
+print(len(p), p)
 
 
 # <===== Practice 5:  Queue: show queue class code =====>

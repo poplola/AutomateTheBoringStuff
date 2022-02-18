@@ -1,0 +1,47 @@
+<!-- 
+YouTube link: https://www.youtube.com/watch?v=aPvHcc0ysm0
+⭐️ Timestamps ⭐️
+00:00:00 | Introduction
+00:01:18 | Environment Setup and "Hello World!"
+00:12:07 | Modifying HTML Elements (getElementByID, innerHTML etc. )
+00:22:54 | Variables and Data Types
+00:35:35 | Logical and Assignment Operators
+00:49:11 | Conditions and Booleans
+01:03:59 | Introduction to Functions
+01:15:30 | If, Else If, Else
+01:25:54 | Switch Statements
+⭐️ 01:36:09 | String Methods and Manipulation
+01:45:43 | Arrays
+01:54:05 | While Loops
+02:04:00 | For Loops
+02:14:04 | For Of /For Each Loops
+02:21:26 | Sets
+02:33:08 | Maps
+02:44:29 | Mutability -->
+
+<html>
+    <body>
+        <h1 id="header">Type Something</h1>
+        <input type="text" id="inp"/>
+        <button onclick="pressed()">Click</button>
+        <p id="output"></p>
+
+        <script>
+            function pressed(){
+                var text = document.getElementById("inp").value;
+
+                // Javascript String Reference : 
+                // https://www.w3schools.com/jsref/jsref_obj_string.asp
+
+                // output.innerHTML = text.toUpperCase(); // str to upper case
+                // output.innerHTML =  .toLowerCase(); // str to lower case
+                // output.innerHTML = text.startsWith("@") // str starts with char: true or false
+                // output.innerHTML = text.endsWith("@") // str ends with char: true or false
+                // output.innerHTML = text.trim(' ').endsWith("@") // trim the beginning and end of str spaces
+                output.innerHTML = "You Typed: " + text.trim(' ') // trim the beginning and end of str spaces
+                console.log(text)
+                // console.log(text.length) // can check password length
+            }
+        </script>    
+    </body>
+</html>

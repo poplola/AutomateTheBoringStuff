@@ -32,7 +32,7 @@ d.print_value()
 print("\n<===== Practice 2: define a function in a for loop  =====>\n")
 for i in range(10):
     def show():
-        print(i*2)
+        print(i, i*2)
     show()
 print()
 show()

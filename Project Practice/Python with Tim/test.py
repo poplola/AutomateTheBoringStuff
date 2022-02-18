@@ -36,6 +36,6 @@ def test2():
     for _ in range(10000000):
         pass
 
-
+print(__name__)
 test1()
 test2()

@@ -10,7 +10,7 @@ class Math:
     add_sub_max = 100
     mul_div_min = 2
     mul_div_max = 12
-    rows = 10
+    rows = 400
     cols = 4
 
     def __init__(self):
@@ -48,7 +48,7 @@ class Math:
                         self.n1 = self.n3
                     f.write(self.__repr__())
                     # print(self.__repr__(), end='')
-                f.write('\n')
+                f.write('\n\n')
                 # print('\n')
 
     def __repr__(self):

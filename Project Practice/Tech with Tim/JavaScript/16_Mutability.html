@@ -1,0 +1,62 @@
+<!-- 
+YouTube link: https://www.youtube.com/watch?v=aPvHcc0ysm0
+⭐️ Timestamps ⭐️
+00:00:00 | Introduction
+00:01:18 | Environment Setup and "Hello World!"
+00:12:07 | Modifying HTML Elements (getElementByID, innerHTML etc. )
+00:22:54 | Variables and Data Types
+00:35:35 | Logical and Assignment Operators
+00:49:11 | Conditions and Booleans
+01:03:59 | Introduction to Functions
+01:15:30 | If, Else If, Else
+01:25:54 | Switch Statements
+01:36:09 | String Methods and Manipulation
+01:45:43 | Arrays
+01:54:05 | While Loops
+02:04:00 | For Loops
+02:14:04 | For Of /For Each Loops
+02:21:26 | Sets
+02:33:08 | Maps
+⭐️ 02:44:29 | Mutability -->
+
+<html>
+    <body>
+        <script>
+            // var x = 5   // permanent type
+            // var t = x   // not affect to x if t changed because x is permanent hold number 5
+            // var z = []  // store object, same like: {} map or set 
+            // var s = z   // reference object means s and z can affect to each other if any of them changed
+
+
+            // function add5(num){
+            //     num += 5
+            //     console.log(num)
+            // }
+
+            // function append5(arr){
+            //     var arr2 = arr
+            //     arr[1] = 100
+            //     arr.push(5)
+            //     console.log("arr2: " + arr2)
+            //     console.log(arr)
+            // }
+
+            // var x = 5
+            // add5(x)
+            // console.log(x)
+
+            // var y = [1,2,3,4]
+            // append5(y)
+            // console.log(y)
+
+
+            var x = [1,2,3,4]
+            var y = x           // x & y both point the same arr, it will get affect to each other if any changed
+            var y = [...x]      // same deep copy as ===> y = x.slice()
+            var y = x.slice()   // deep copy arr x to arr y, so x and y point to different arry with same value
+            var y = x.slice(0,3)    // copy the first 3 item of arry x to arry y
+            y[2] = 999      // when change value of arr y, it will not change arr x
+            console.log(x)
+        </script>    
+    </body>
+</html>

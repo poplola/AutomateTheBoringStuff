@@ -1,0 +1,66 @@
+<!-- 
+YouTube link: https://www.youtube.com/watch?v=aPvHcc0ysm0
+⭐️ Timestamps ⭐️
+00:00:00 | Introduction
+00:01:18 | Environment Setup and "Hello World!"
+00:12:07 | Modifying HTML Elements (getElementByID, innerHTML etc. )
+00:22:54 | Variables and Data Types
+00:35:35 | Logical and Assignment Operators
+00:49:11 | Conditions and Booleans
+01:03:59 | Introduction to Functions
+01:15:30 | If, Else If, Else
+01:25:54 | Switch Statements
+01:36:09 | String Methods and Manipulation
+01:45:43 | Arrays
+01:54:05 | While Loops
+02:04:00 | For Loops
+02:14:04 | For Of /For Each Loops
+02:21:26 | Sets
+⭐️ 02:33:08 | Maps
+02:44:29 | Mutability -->
+
+<html>
+    <body>
+        <script>
+            // var mp = new Map(
+            //     [
+            //         ["t", 5],
+            //         ["v", 8]
+            //     ]
+            // )
+            // mp.set("t", 9)
+            // mp.set(3, "hello")
+            // console.log(mp)
+            // console.log(mp.get("t"))    // get value of the key in map
+            // mp.delete("t")
+            // console.log(mp.size)
+            // console.log(mp.has("v"))    // true or false: finding key in map
+            // console.log(mp.entries())
+            // // mp.clear()  // remove all items in map
+
+            // for (entry of mp){
+            //     console.log(entry)
+            //     console.log(entry[0])
+            //     console.log(entry[1])
+            // }
+
+
+            var mp = new Map()
+            str = "this is my new string hello"
+
+            for (var letter of str){
+                if (mp.has(letter)){
+                    mp.set(letter, mp.get(letter)+1)
+                }else{
+                    mp.set(letter, 1)
+                }
+            }
+
+            console.log(mp)
+            console.log(mp.has("t"))
+            console.log(mp.get("t"))
+
+
+        </script>    
+    </body>
+</html>
